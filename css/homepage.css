@@ -1,0 +1,424 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+body {
+  background-image: url("../asset/header1.jpg");
+  background-repeat: no-repeat;
+}
+.logo {
+  width: 200px;
+  height: auto;
+  cursor: pointer;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 45px 70px;
+  position: relative;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-size: smaller;
+  font-family: "Roboto";
+  font-weight: 600;
+}
+.navbar ul li::after {
+  content: "";
+  height: 3px;
+  width: 0;
+  background: rgb(0, 0, 0);
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition: 0.5s;
+}
+.navbar ul li:hover::after {
+  width: 100%;
+}
+.tajuk {
+  padding-top: 50px;
+  padding-left: 50px;
+  font-family: "Teko";
+  text-transform: uppercase;
+  font-size: 150px;
+  line-height: 120px;
+}
+.header {
+  height: 130vh;
+  width: auto;
+  position: relative;
+}
+.hanger {
+  width: 100%;
+  height: 95%;
+}
+.text {
+  position: absolute;
+  top: 25px;
+  left: 16px;
+}
+.cat-title {
+  margin: 0 30px;
+  font-family: "Teko";
+  font-size: 50px;
+  letter-spacing: 1px;
+  font-weight: 900;
+}
+.form {
+  margin: 200px 400px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.search {
+  width: 624px;
+  height: 64px;
+  border-radius: 15px;
+  font-size: 16px;
+  border: transparent;
+  padding: 0 20px;
+  box-shadow: 0px 3px 11px 9px rgba(0, 0, 0, 0.1);
+}
+.search:focus {
+  outline: none;
+}
+.button {
+  position: absolute;
+  left: 625px;
+}
+.item1 {
+  grid-area: gambar1;
+}
+.item2 {
+  grid-area: gambar2;
+}
+.item3 {
+  grid-area: gambar3;
+}
+.item4 {
+  grid-area: gambar4;
+}
+.item5 {
+  grid-area: gambar5;
+}
+.item6 {
+  grid-area: gambar6;
+}
+
+.category {
+  position: relative;
+  display: grid;
+  grid-template-areas:
+    "gambar1 gambar2 gambar4 gambar5"
+    "gambar1 gambar3 gambar6 gambar6";
+}
+
+.category > div {
+  padding-left: 10px;
+  padding-top: 20px;
+  width: fit-content;
+}
+
+.header .text .shop {
+  border-radius: 5px;
+  display: inline-block;
+  text-decoration: none;
+  font-family: "Teko";
+  font-size: 30px;
+  text-transform: uppercase;
+  border: 3px solid black;
+  color: #000;
+  cursor: pointer;
+  margin-left: 100px;
+  margin-top: 5%;
+  padding: 10px;
+}
+
+.header .text .shop:hover {
+  color: white;
+  background-color: black;
+  transform: scale(1.2, 1.2);
+}
+.header .text .shop:focus {
+  color: white;
+  background-color: black;
+  transform: scale(0.8, 0.8);
+}
+.cart {
+  position: relative;
+  width: 30px;
+  height: auto;
+}
+.cart1 {
+  position: absolute;
+  width: 30px;
+  height: auto;
+  opacity: 0;
+}
+.shop:hover .cart1 {
+  opacity: 1;
+  right: 10px;
+}
+.cart-circle
+{
+  cursor: pointer;
+	position:fixed;
+	width:75px;
+	height:70px;
+	bottom:20px;
+	right:10px;
+	background-color:rgb(0, 0, 0);
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+  z-index: 1;
+  padding-top: 5px;
+}
+
+.addtocart
+{
+  width: 30px;
+  position: fixed;
+  margin-top: 25px;
+  margin-left: -20px;
+}
+
+.profile-circle
+{
+  cursor: pointer;
+	position:fixed;
+	width:75px;
+	height:70px;
+	bottom:20px;
+	right:100px;
+	background-color:rgb(0, 0, 0);
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+  z-index: 1;
+  padding-top: 5px;
+}
+.register
+{
+  width: 30px;
+  position: fixed;
+  margin-top: 20px;
+  margin-left: -15px;
+}
+.belikerusi {
+  color: chocolate;
+  font-family: "Poppins";
+  font-weight: bolder;
+  font-size: 30px;
+  position: absolute;
+  top: 30%;
+  left: 2.5%;
+  opacity: 0;
+}
+.item1:hover .chair {
+  opacity: 0.4;
+  transition: 1s;
+}
+.item1:hover .belikerusi {
+  opacity: 1;
+}
+a.buy {
+  display: inline-block;
+  font-size: 25px;
+  color: #000;
+  text-decoration: none;
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 5px;
+}
+a.buy:hover{
+  display: inline-block;
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+  background-color: #000;
+  text-decoration: none;
+  border: 2px solid rgb(0, 0, 0);
+  padding: 10px;
+  border-radius: 5px;
+}
+.kabinet {
+  color: chocolate;
+  font-family: "Poppins";
+  font-weight: bolder;
+  font-size: 25px;
+  position: absolute;
+  top: 15%;
+  left: 30%;
+  opacity: 0;
+}
+.item2:hover .cabinet {
+  opacity: 0.4;
+  transition: 1s;
+}
+.item2:hover .kabinet {
+  opacity: 1;
+}
+.meja {
+  color: chocolate;
+  font-family: "Poppins";
+  font-weight: bolder;
+  font-size: 25px;
+  position: absolute;
+  top: 65%;
+  left: 27%;
+  opacity: 0;
+}
+.item3:hover .table {
+  opacity: 0.2;
+  transition: 1s;
+}
+.item3:hover .meja {
+  opacity: 1;
+}
+a.buy2 {
+  display: inline-block;
+  font-size: 15px;
+  margin-top: 10px;
+  color: #000;
+  text-decoration: none;
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 5px;
+}
+a.buy2:hover {
+  display: inline-block;
+  font-size: 15px;
+  margin-top: 10px;
+  color: rgb(255, 255, 255);
+  background-color: #000;
+  text-decoration: none;
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 5px;
+}
+.almari {
+  color: chocolate;
+  font-family: "Poppins";
+  font-weight: bolder;
+  font-size: 25px;
+  position: absolute;
+  top: 8%;
+  left: 80%;
+  opacity: 0;
+}
+.item5:hover .wardrobe {
+  opacity: 0.2;
+  transition: 1s;
+}
+.item5:hover .almari {
+  opacity: 1;
+}
+.rak {
+  color: chocolate;
+  font-family: "Poppins";
+  font-weight: bolder;
+  font-size: 25px;
+  position: absolute;
+  top: 15%;
+  left: 55%;
+  opacity: 0;
+}
+.item4:hover .shelf {
+  opacity: 0.3;
+  transition: 1s;
+}
+.item4:hover .rak {
+  opacity: 1;
+}
+.katil {
+  color: chocolate;
+  font-family: "Poppins";
+  font-weight: bolder;
+  font-size: 50px;
+  position: absolute;
+  top: 65%;
+  left: 55%;
+  opacity: 0;
+}
+.item6:hover .bed {
+  opacity: 0.3;
+  transition: 1s;
+}
+.item6:hover .katil {
+  opacity: 1;
+}
+
+.item6 {
+  grid-area: gambar6;
+}
+.item7 {
+  grid-area: gambar7;
+}
+.item8 {
+  grid-area: gambar8;
+}
+.item9 {
+  grid-area: gambar9;
+}
+.item10 {
+  grid-area: gambar10;
+}
+
+.fact {
+  display: grid;
+  grid-template-areas:
+    "gambar6 gambar7 gambar8 gambar9 gambar10"
+    "gambar6 gambar7 gambar8 gambar9 gambar10";
+  gap: 25px;
+  margin: 100px auto auto 230px;
+  width: 70%;
+  color: black;
+}
+
+.fact div {
+  font-family: "Roboto";
+  background-color: rgb(244, 244, 244);
+  text-align: center;
+  padding: 15px 0;
+  font-size: 15px;
+  font-weight: 200;
+  box-shadow: 0px 15px 18px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+.img-bot {
+  width: 150px;
+  height: auto;
+}
+.aboutimg {
+  width: 50%;
+  height: auto;
+}
+.aboutus {
+  font-family: "Poppins";
+  margin-top: 100px;
+  padding-top: 10px;
+  color: white;
+  background-color: #000;
+  padding: 20px 0;
+}
+.cp {
+  font-family: "Roboto";
+  display: flex;
+  justify-content: space-around;
+  line-height: 40px;
+  /* margin-left: 50px;
+  margin-top: 50px; */
+}
+.about-title {
+  margin: 15px 30px auto 700px;
+  font-size: 25px;
+}

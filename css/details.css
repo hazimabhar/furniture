@@ -1,0 +1,260 @@
+* {
+    margin: 0%;
+    padding: 0%;
+  }
+  .logo {
+    width: 200px;
+    height: auto;
+    cursor: pointer;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+  .navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 45px 70px;
+    position: relative;
+  }
+  .navbar ul li a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: smaller;
+    font-family: "Roboto";
+    font-weight: 600;
+  }
+  .navbar ul li::after {
+    content: "";
+    height: 3px;
+    width: 0;
+    background: rgb(0, 0, 0);
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+  }
+  .navbar ul li:hover::after {
+    width: 100%;
+  }
+  .display
+  {
+    font-family: 'Teko';
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+    margin: auto;
+  }
+
+  .left
+  {
+    display: block;
+  }
+  .chair-detail
+  {
+    justify-content: space-evenly;
+    display: flex;
+  }
+  .product {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+  }
+  .item6{
+    background-color: #ededed ;
+    padding: 25px ;
+    font-size: 20px;
+    width: 300%;
+  }
+  .img-main
+  {
+    width:100%;
+    height: auto;
+  }
+  .img-bot
+  {
+    cursor: pointer;
+    width:15%;
+    height: auto;
+    border: 3px solid #e4e4e4;
+    border-radius: 10px;
+
+  }
+  .img-bot:hover
+  {   
+    border: 3px solid black;
+    border-radius: 10px;
+  }
+  .veneto
+  {
+    font-family: 'Varta';
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 31.5px;
+    color: rgb(0, 0, 0);
+  }
+  .harga
+  {
+    font-family: 'Roboto';
+    font-size: 25px;
+    font-weight: 700;
+    color:rgb(103, 101, 100);
+
+  }
+  .dimension{
+    border-bottom: 1px solid black  ;
+    font-family: 'Varta';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color: rgb(21, 21, 21);
+    padding-top: 30px;
+  }
+  .lwh
+  {
+    font-family: 'Varta';
+    font-size: 17px;
+    font-weight: 400;
+    padding: 15px 0px;
+    color:rgb(103, 101, 100);
+  }
+  .button-desc
+  {
+    padding: 10px;
+    border-radius: 15px;
+  }
+  .button-desc:hover
+  {
+    background-color: black;
+    color: white;
+  }
+  .button-material
+  {
+    padding: 10px;
+    border-radius: 15px;
+  }
+  .button-material:hover
+  {
+    background-color: black;
+    color: white;
+  }
+  .item-description
+  {
+    height: 280px;
+  }
+  .description-detail
+  {
+    font-family: 'Varta';
+    line-height: 30px;
+    font-size: 15px;
+  }
+  .material-detail
+  {
+    font-family: 'Varta';
+    line-height: 30px;
+    font-size: 15px;
+  }
+  .cart-button
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+ .add-to-cart
+ {
+  width: 50%;
+  height: auto;
+  padding: 25px ;
+  border-radius: 50px;
+  justify-content: space-between;
+  display: flex;
+ }
+ .add-to-cart:hover
+ {
+   background-color: black;
+   color: white;
+ }
+.cart
+{
+  font-size: 16.38px;
+}
+.price
+{
+  font-size: 16.38px;
+}
+  .aboutimg {
+    width: 50%;
+    height: auto;
+  }
+  .aboutus {
+    font-family: "Poppins";
+    margin-top: 100px;
+    padding-top: 10px;
+    color: white;
+    background-color: #000;
+    padding: 20px 0;
+  }
+  .cp {
+    font-family: "Roboto";
+    display: flex;
+    justify-content: space-around;
+    line-height: 40px;
+    margin-left: 50px;
+    margin-top: 50px;
+  }
+  .about-title {
+    margin: 15px 30px auto 700px;
+    font-size: 25px;
+  }
+  
+  
+  .cart-circle
+{
+  cursor: pointer;
+	position:fixed;
+	width:75px;
+	height:70px;
+	bottom:20px;
+	right:10px;
+	background-color:rgb(0, 0, 0);
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+  z-index: 1;
+  padding-top: 5px;
+}
+
+.addtocart
+{
+  width: 30px;
+  position: fixed;
+  margin-top: 25px;
+  margin-left: -20px;
+}
+
+.profile-circle
+{
+  cursor: pointer;
+	position:fixed;
+	width:75px;
+	height:70px;
+	bottom:20px;
+	right:100px;
+	background-color:rgb(0, 0, 0);
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+  z-index: 1;
+  padding-top: 5px;
+}
+.register
+{
+  width: 30px;
+  position: fixed;
+  margin-top: 20px;
+  margin-left: -15px;
+}

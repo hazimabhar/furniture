@@ -1,0 +1,175 @@
+* {
+    margin: 0%;
+    padding: 0%;
+  }
+  .logo {
+    width: 200px;
+    height: auto;
+    cursor: pointer;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+  .navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 45px 70px;
+    position: relative;
+  }
+  .navbar ul li a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: smaller;
+    font-family: "Roboto";
+    font-weight: 600;
+  }
+  .navbar ul li::after {
+    content: "";
+    height: 3px;
+    width: 0;
+    background: rgb(0, 0, 0);
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+  }
+  .navbar ul li:hover::after {
+    width: 100%;
+  }
+  .header
+  {
+    position: relative;
+    
+  }
+
+  h1{
+    width: 50vw;
+    padding-top: 25px;
+    padding-bottom: 50px;
+    margin-left: 200px;
+    font-family: "Teko";
+    text-transform: uppercase;
+    font-size: 50px;
+    cursor: pointer;
+  }
+  .product-detail-total
+  {
+    display: flex;
+    justify-content: space-between;
+    width: 50vw;
+    font-family: "Poppins";
+    margin-left: 160px;
+  }
+
+  .content
+  {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .leftside
+  {
+    width: 40vw;
+  }
+  .rightside
+  {
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .total-item
+  {
+    margin-left: 150px;
+    margin-top: 50px;
+    font-family: "Roboto";
+    font-size: 14px;
+  }
+  .line
+  {
+    width: 130%;
+    padding: 10px;
+    margin-left: 135px;
+  }
+  .productImage
+  {
+    width: 230px;
+    height: auto;
+    margin-left: 100px;
+  }
+.detail
+{
+  font-family: "Roboto";
+  font-size: 15px;
+  width: 150%;
+  display: flex;
+  justify-content: space-between;
+}
+.productName, .price
+{
+  padding-top: 20px;
+}
+input
+{
+  width: 25px;
+  height: 25px;
+}
+.removeItem
+{
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  font-weight: 700;
+  padding-top: 30px;
+  padding-left: 20px;
+}
+.removeItem:hover
+{
+  color: rgb(111, 111, 111);
+}
+th{
+  text-align: left;
+}
+td
+{
+  font-weight: 400;
+  padding-top: 15px;
+}
+.priceDetail
+{
+  padding-right: 300px;
+}
+.priceDetailLast
+{
+  padding-bottom: 30px;
+  border-bottom: solid 2px;
+}
+.subtotalPrice
+{
+  font-weight: 900;
+  font-size: 20px;
+}
+.placeOrder
+{
+  padding: 15px;
+  width: 300px;
+  margin-top: 50px;
+  margin-right: 150px;
+  border-radius: 30px;
+  color: white;
+  background-color: black;
+}
+.placeOrder:hover
+{
+  color: black;
+  background-color: white;
+}
+.subtotal{
+  left: 68%;
+  bottom: 30%;
+position: absolute;
+}
+
+
+

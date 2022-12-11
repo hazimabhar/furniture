@@ -1,0 +1,279 @@
+* {
+    margin: 0%;
+    padding: 0%;
+  }
+  .logo {
+    width: 200px;
+    height: auto;
+    cursor: pointer;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+  .navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 45px 70px;
+    position: relative;
+  }
+  .navbar ul li a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: smaller;
+    font-family: "Roboto";
+    font-weight: 600;
+  }
+  .navbar ul li::after {
+    content: "";
+    height: 3px;
+    width: 0;
+    background: rgb(0, 0, 0);
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+  }
+  .navbar ul li:hover::after {
+    width: 100%;
+  }
+  .header
+  {
+    position: relative;
+  }
+  .header-chair
+  {
+    width: 100%;
+    height: auto;
+  
+  }
+  h1{
+    position: absolute;
+    padding-top: 25px;
+    padding-left: 50px;
+    font-family: "Teko";
+    text-transform: uppercase;
+    font-size: 100px;
+    cursor: pointer;
+  }
+  .material
+  {
+    position: absolute;
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-weight: 900;
+    top:30%;
+    left: 27%;
+  }
+  .desc-material
+  {  
+    position: absolute;
+    font-size: 15px;
+    font-family: 'Poppins';
+    top: 37%;
+    left: 27%;
+  }
+  .durability
+  {
+    position: absolute;
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-weight: 900;
+    bottom: 50%;
+    left: 3%;
+  }
+  .desc-durability
+  {
+    position: absolute;
+    font-size: 15px;
+    font-family: 'Poppins';
+    bottom: 45%;
+    left: 3%;
+  }
+  .desc-furniture
+  {
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: 'Poppins';
+    bottom: 5%;
+    left: 65%;
+  }
+  .display
+  {
+    font-family: 'Teko';
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 25px;
+  }
+  .item6 {
+    grid-area: gambar6;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .item7 {
+    grid-area: gambar7;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .item8 {
+    grid-area: gambar8;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .product {
+    display: grid;
+    position: relative;
+    grid-template-areas:
+      "gambar6 gambar7 gambar8"
+      "gambar6 gambar7 gambar8";
+    gap: 50px;
+    margin: 100px auto auto 230px;
+    width: 70%;
+    color: black;
+  }
+  
+  .product div {
+    font-family: 'Roboto';
+    background-color: #ededed ;
+    padding: 10px ;
+    font-size: 15px;
+    font-weight: 900;
+    box-shadow: -18px 24px 14px 0px rgba(0,0,0,0.1);
+    border-radius: 15px;
+  }
+  .img-table1
+  {
+    position: absolute;
+    cursor: pointer;
+    width: 360px;
+    height: auto;
+    bottom: 40%;
+    right: 68%;  
+  }
+  .dual
+  {
+    margin-top: 150px;
+  }  
+  .img-table2
+  {
+    position: absolute;
+    cursor: pointer;
+    width: 320px;
+    height: auto;
+    bottom: 40%;
+    right: 35%;  
+  }
+  .crimson
+  {
+    margin-top: 150px;
+  }
+  .img-table3
+  {
+    position: absolute;
+    cursor: pointer;
+    width: 320px;
+    height: auto;
+    bottom: 50%;
+    left: 70%;  
+  }
+  .weiland
+  {
+    margin-top: 150px;
+  }
+  .details-table
+  {
+    text-decoration: none;
+    font-family: 'Roboto'; 
+    font-weight: 900;
+    color: rgb(107, 107, 107);
+    border: 2px solid rgb(128, 128, 128);
+    margin-top: 150px;
+    padding: 8px 5px;
+    border-radius: 10px;
+  }
+  .details-table:hover
+  {
+    color: white;
+    background: black;
+  }
+  
+  .img-bot {
+    cursor: pointer;
+    width: 150px;
+    height: auto;
+    transition: transform 1.0s;
+  
+  }
+  .aboutimg {
+    width: 50%;
+    height: auto;
+  }
+  .aboutus {
+    font-family: "Poppins";
+    margin-top: 100px;
+    padding-top: 10px;
+    color: white;
+    background-color: #000;
+    padding: 20px 0;
+  }
+  .cp {
+    font-family: "Roboto";
+    display: flex;
+    justify-content: space-around;
+    line-height: 40px;
+    margin-left: 50px;
+    margin-top: 50px;
+  }
+  .about-title {
+    margin: 15px 30px auto 700px;
+    font-size: 25px;
+  }
+  .cart-circle
+{
+  cursor: pointer;
+	position:fixed;
+	width:75px;
+	height:70px;
+	bottom:20px;
+	right:10px;
+	background-color:rgb(0, 0, 0);
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+  z-index: 1;
+  padding-top: 5px;
+}
+.addtocart
+{
+  width: 30px;
+  position: fixed;
+  margin-top: 25px;
+  margin-left: -20px;
+}
+.profile-circle
+{
+  cursor: pointer;
+	position:fixed;
+	width:75px;
+	height:70px;
+	bottom:20px;
+	right:100px;
+	background-color:rgb(0, 0, 0);
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+  z-index: 1;
+  padding-top: 5px;
+}
+.register
+{
+  width: 30px;
+  position: fixed;
+  margin-top: 20px;
+  margin-left: -15px;
+}

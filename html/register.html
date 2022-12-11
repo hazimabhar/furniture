@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Varta:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/register.css" />
+  </head>
+  <body>
+    <a href="../html/homepage.html"><img src="../asset/logo.png" alt="" class="logo" /></a>
+    <img class="right" src="../asset/register.png" alt="">
+    <div class="left">
+      <h1>Help us simplify the delivering process</h1>
+      <p class="sub">Please insert your personal information</p>
+      <form id="form" name="register-form" onsubmit="register()">
+        <input
+          type="text"
+          name="fullname"
+          id="fullname"
+          placeholder="Fullname"
+        />
+        <div id="fullname-result" class="result"></div>
+        <br />
+        <input
+          type="text"
+          name="username"
+          id="username"
+          placeholder="Username"
+        />        
+        <div id="username-result" class="result"></div>
+        <br />
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Password"
+        />
+        <div id="password-result" class="result"></div>
+        <br />
+        <input type="email" name="email" id="email" placeholder="Email" />
+        <div id="email-result" class="result"></div>
+        <br />
+        <input
+          type="text"
+          name="phonenumber"
+          id="phonenumber"
+          placeholder="Phone Number"
+        />
+        <div id="phonenumber-result" class="result"></div>
+        <br />
+        <input type="text" name="address" id="address" placeholder="Address" />
+        <div id="address-result" class="result"></div>
+        <br />
+        <div class="drop">   
+          <select name="state" id="state">
+          <option value="state">State</option>
+          <option value="johor">Johor</option>
+          <option value="kualalumpur">Kuala Lumpur</option>
+          <option value="melaka">Melaka</option>
+          <option value="negerisembilan">Negeri Sembilan</option>
+          <option value="pulaupinang">Pulau Pinang</option>
+        </select>
+        <select name="postcode" id="postcode">
+          <option value="postcode">Postcode</option>
+          <option value="68100">68100</option>
+          <option value="46000">46000</option>
+          <option value="62000">62000</option>
+          <option value="80200">80200</option>
+          <option value="86400">86400</option>
+        </select>
+        <select name="city" id="city">
+          <option value="city">City</option>
+          <option value="batupahat">Batu Pahat</option>
+          <option value="paritraja">Parit Raja</option>
+          <option value="srigading">Sri Gading</option>
+          <option value="ayerhitam">Ayer Hitam</option>
+          <option value="yongpeng">Yong Peng</option>
+        </select>
+</div>
+
+     
+        <br />
+        <button class="button" type="submit">Submit</button>
+      </form>
+      <p class="login">
+        Already have an account? <a href="../html/login.html">Login</a>
+      </p>
+    </div>
+
+    <script src="../js/register.js"></script>
+  </body>
+</html>

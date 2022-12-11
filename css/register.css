@@ -1,0 +1,98 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+.logo
+{
+    width: 200px;
+    height: auto;
+    cursor: pointer;
+}
+.right
+{
+    position: absolute;
+    margin-left: 595px;
+}
+
+.left
+{
+    position: relative;
+    padding-left: 50px;
+}
+
+h1
+{
+    font-family: "Poppins";
+    font-size: 35px;
+    letter-spacing: -1px;
+    font-weight: 700;
+}
+.sub
+{
+    padding-left: 15px;
+    font-family: "Poppins";
+    font-size: 25px;
+    letter-spacing: -1px;
+    margin-bottom: 25px;
+}
+input
+{
+    background-color: rgba(242, 242, 242, 1);
+    font-size: 15px;
+    padding-left: 15px;
+    width: 550px;
+    height: 45px;
+    border-radius: 15px;
+    border: 0px;
+}
+.result
+{
+    color: red;
+    font-size: 10px;
+    padding-left: 10px;
+    font-family: "Poppins";
+}
+.drop
+{
+    display: flex;
+}
+ #state, #postcode, #city
+{
+    background-color: rgba(242, 242, 242, 1);
+    padding-left:15px;
+    width: 170px;
+    height: 45px;
+    border-radius: 15px;
+    border: 0px;
+    margin: 5px;
+}
+
+
+button 
+{
+    border-radius: 5px;
+    font-family: "Poppins";
+    font-size: 15px;
+    text-transform: uppercase;
+    border: 3px solid black;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    padding: 5px;
+    margin-left: 410px;
+    width: 150px;
+    height: auto;
+}
+button:hover
+{
+    color: black;
+    background-color: white;
+}
+.login
+{
+    font-family: "Poppins";
+    margin-left: 100px;
+    padding-bottom: 20px;
+}
+
